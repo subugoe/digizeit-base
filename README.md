@@ -1,4 +1,4 @@
-# Base image for usage in with Symfony and ImageMagick installations
+# Base image for usage in Symfony with ImageMagick installations
 
 This image uses the official PHP alpine fpm image as base and adds ImageMagick and other PHP extensions on top.
 Its usage is mainly intendet for a specific project we are working on.
