@@ -44,7 +44,7 @@ RUN apk add --update --no-cache \
         imagick \
         ldap \
         apcu && \
-    printf "memory_limit=1024M" > /usr/local/etc/php/conf.d/memory-limit.ini && \
+    printf "memory_limit=1536M" > /usr/local/etc/php/conf.d/memory-limit.ini && \
     printf '[PHP]\ndate.timezone = "Europe/Berlin"\n' > /usr/local/etc/php/conf.d/tzone.ini && \
     docker-php-source delete && \
     curl -sS https://getcomposer.org/installer | php && \
