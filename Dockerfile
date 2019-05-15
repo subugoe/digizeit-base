@@ -38,11 +38,13 @@ RUN apk add --update --no-cache \
         opcache && \
     pecl install \
         imagick \
+        redis \
         apcu && \
     docker-php-ext-enable \
         gd \
         imagick \
         ldap \
+        redis \
         apcu && \
     printf "memory_limit=1536M" > /usr/local/etc/php/conf.d/memory-limit.ini && \
     printf '[PHP]\ndate.timezone = "Europe/Berlin"\n' > /usr/local/etc/php/conf.d/tzone.ini && \
