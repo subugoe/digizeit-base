@@ -6,7 +6,7 @@ Its usage is mainly intendet for a specific project we are working on.
 To use this as a base image for an application's Dockerfile it could look like this:
 
 ```
-FROM subugoe/digizeit-base
+FROM subugoe/digizeit-base:v1.0.1
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 # More environment variables when needed
